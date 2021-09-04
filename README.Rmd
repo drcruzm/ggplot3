@@ -6,6 +6,7 @@ output: github_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
 ## Librerias
 
 ```{r}
@@ -17,7 +18,7 @@ library(usethis)
 ## Correr Siempre
 
 ```{r}
- usethis::use_git(message = "V1")
+usethis::use_git(message = "V1")
 ```
 
 ## leyendo Dtos
@@ -28,11 +29,19 @@ attach(mpg)
 # str(mpg)
 ```
 
+## Scatter plot
+[figuras](https://www.dropbox.com/s/h18nmf5vahdidzs/figuras.Rmd?dl=0)
+
 ```{r graf-disp-hwy}
 d <- ggplot(mpg, aes(displ,hwy)) # PASO 1
 (d + geom_point())
 ```
 
+
+
+```{r}
+
+```
 
 
 

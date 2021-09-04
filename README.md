@@ -31,7 +31,7 @@ library(usethis)
 ## Correr Siempre
 
 ``` r
-# usethis::use_git(message = "V1")
+#usethis::use_git(message = "V1")
 ```
 
 ## leyendo Dtos
@@ -41,6 +41,10 @@ library(usethis)
 attach(mpg)
 # str(mpg)
 ```
+
+## Scatter plot
+
+[figuras](https://www.dropbox.com/s/h18nmf5vahdidzs/figuras.Rmd?dl=0)
 
 ``` r
 d <- ggplot(mpg, aes(displ,hwy)) # PASO 1
