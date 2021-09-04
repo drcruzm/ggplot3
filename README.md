@@ -28,14 +28,24 @@ library(devtools)
 library(usethis)
 ```
 
+## Correr Siempre
+
+``` r
+# usethis::use_git(message = "V1")
+```
+
+## leyendo Dtos
+
+``` r
+# View(mpg) #leyendo datos
+attach(mpg)
+# str(mpg)
+```
+
 ``` r
 # gitcreds::gitcreds_set()
 ```
 
 ``` r
 # gh::gh_whoami()
-```
-
-``` r
-# usethis::use_git(message = "V1")
 ```
