@@ -16,11 +16,11 @@ library(usethis)
 
 
 ```{r}
-gitcreds::gitcreds_set()
+# gitcreds::gitcreds_set()
 ```
 
 ```{r}
-gh::gh_whoami()
+# gh::gh_whoami()
 ```
 
 ```{r}
