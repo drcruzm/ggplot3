@@ -28,6 +28,12 @@ attach(mpg)
 # str(mpg)
 ```
 
+```{r graf-disp-hwy}
+d <- ggplot(mpg, aes(displ,hwy)) # PASO 1
+(d + geom_point())
+```
+
+
 
 
 

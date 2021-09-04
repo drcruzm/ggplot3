@@ -43,6 +43,13 @@ attach(mpg)
 ```
 
 ``` r
+d <- ggplot(mpg, aes(displ,hwy)) # PASO 1
+(d + geom_point())
+```
+
+![](README_files/figure-gfm/graf-disp-hwy-1.png)<!-- -->
+
+``` r
 # gitcreds::gitcreds_set()
 ```
 
