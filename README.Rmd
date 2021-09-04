@@ -1,0 +1,29 @@
+---
+title: "Aprendiendo GGplot2"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Librerias
+
+```{r}
+library(tidyverse)
+library(devtools)
+library(usethis)
+```
+
+
+```{r}
+gitcreds::gitcreds_set()
+```
+
+```{r}
+gh::gh_whoami()
+```
+
+```{r}
+usethis::use_git(message = "V1")
+```
+
