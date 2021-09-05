@@ -31,8 +31,10 @@ library(usethis)
 ## Correr Siempre
 
 ``` r
-#usethis::use_git(message = "V1")
+ usethis::use_git(message = "V1")
 ```
+
+    ## ✓ Setting active project to '/cloud/project'
 
 ## leyendo Dtos
 
@@ -54,9 +56,43 @@ d <- ggplot(mpg, aes(displ,hwy)) # PASO 1
 ![](README_files/figure-gfm/graf-disp-hwy-1.png)<!-- -->
 
 ``` r
-# gitcreds::gitcreds_set()
+(d + geom_point(shape=23, size=4, color="red",fill="yellow") )
+```
+
+![](README_files/figure-gfm/graf-disp-hwy2-1.png)<!-- -->
+
+``` r
+names(mpg)
+```
+
+    ##  [1] "manufacturer" "model"        "displ"        "year"         "cyl"         
+    ##  [6] "trans"        "drv"          "cty"          "hwy"          "fl"          
+    ## [11] "class"
+
+``` r
+d <- ggplot(mpg, aes(displ,hwy,col=cyl)) # PASO 1
+(d + geom_point())
+```
+
+![](README_files/figure-gfm/graf-cilindros-1.png)<!-- -->
+
+``` r
+(d + geom_point(aes(color=class),size=4))
+```
+
+![](README_files/figure-gfm/grafica-color-1.png)<!-- -->
+
+``` r
+(d + geom_point(aes(color=drv),size=4))
+```
+
+![](README_files/figure-gfm/grafica-color-2.png)<!-- -->
+
+``` r
+ gitcreds::gitcreds_set()
+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
 ```
 
 ``` r
-# gh::gh_whoami()
+gh::gh_whoami()
 ```
