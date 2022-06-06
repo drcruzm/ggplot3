@@ -10,9 +10,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Librerias
 
 ```{r}
-library(tidyverse)
-library(devtools)
-library(usethis)
+library(ggplot2)
+
 ```
 
 ## Correr Siempre
