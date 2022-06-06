@@ -1,6 +1,7 @@
 ---
-title: "Aprendiendo GGplot2"
-output: github_document
+title: "Ggplot-1"
+output: html_document
+date: "`r Sys.Date()`"
 ---
 
 ```{r setup, include=FALSE}
@@ -24,7 +25,6 @@ str(mpg)
 ```
 
 ## Scatter plot
-
 [figuras](https://www.dropbox.com/s/h18nmf5vahdidzs/figuras.Rmd?dl=0)
 
 ```{r graf-disp-hwy}
@@ -32,9 +32,12 @@ d <- ggplot(mpg, aes(displ,hwy)) # PASO 1
 d + geom_point()
 ```
 
+
+
 ```{r graf-disp-hwy2}
 d + geom_point(shape=23, size=4, color="red", fill="yellow") 
 ```
+
 
 ```{r graf-cilindros}
 names(mpg)
@@ -45,6 +48,7 @@ d + geom_point()
 ```{r grafica-color}
 d + geom_point(aes(color=class),size=4)
 ```
+
 
 ```{r grafica-color cyl}
 d + geom_point(aes(color=drv),size=4)
